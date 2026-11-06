@@ -1,0 +1,1069 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.navbar {
+    background-color: rgb(238, 234, 238);
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar .title img {
+    background-color: blueviolet;
+    width: 40px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.navbar .title h2 {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    font-family: "EXO", sans-serif;
+}
+
+.navbar .btns {
+    float: right;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: "EXO", sans-serif;
+}
+
+.navbar .btns ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.navbar .btns ul li a {
+    color: black;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+    position: relative;
+}
+
+.ho::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: blueviolet;
+    transition: width 0.3s ease;
+}
+
+.navbar .btns ul li a.ho:hover {
+    color: blueviolet;
+    transition-delay: 0;
+}
+
+.ho:hover::after {
+    width: 100%;
+}
+
+#H {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.parent .child1 {
+    position: relative;
+    width: 35%;
+    border: 1px solid silver;
+    margin-top: 120px;
+    margin-left: 170px;
+    border-radius: 20px;
+    border-width: 2px;
+    float: left;
+}
+
+.parent .child1 img {
+    width: 93%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.discount {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: blueviolet;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "exo", sans-serif;
+}
+
+.parent .child2 {
+    width: 50%;
+    margin-top: 120px;
+    margin-left: 50px;
+    float: left;
+}
+
+.parent .child2 .tag {
+    display: inline-block;
+    position: static;
+    background-color: blueviolet;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.parent .child2 h1 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.parent .child2 h1 span.main-color {
+    background-color: white;
+    color: blueviolet;
+    font-size: 45px;
+    padding-left: 10px;
+    position: static;
+}
+
+.parent .child2 p {
+    width: 90%;
+    font-size: 17px;
+    line-height: 1.7;
+    color: darkgray;
+    font-family: sans-serif;
+}
+
+.parent .child2 .price {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.parent .child2 .price .old {
+    font-size: 20px;
+    position: static;
+    color: gray;
+    background-color: white;
+    text-decoration: line-through;
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+
+.parent .child2 .price .save {
+    font-size: 14px;
+    position: static;
+    color: indianred;
+    background-color: mistyrose;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+.parent .child2 .payment {
+    font-size: 15px;
+    color: darkgray;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.parent .child2 .cart {
+    width: 80%;
+    height: 55px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: sans-serif;
+    transition: .3s;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+}
+
+.cart i {
+    margin-right: 10px;
+}
+
+.parent .child2 .wishlist {
+    width: 80%;
+    height: 55px;
+    background-color: white;
+    color: black;
+    border: 1px solid silver;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.wishlist:hover {
+    transform: scale(1.1);
+}
+
+.wishlist i {
+    margin-right: 10px;
+}
+
+.comparison {
+    background-color: rgb(238, 234, 238);
+    padding: 80px 0;
+    margin-top: 100px;
+}
+
+.comparison .container .title h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.comparison .container .title h1 span.com {
+    text-align: center;
+    color: blueviolet;
+    background-color: rgb(238, 234, 238);
+    font-size: 35px;
+    margin-left: 6px;
+    position: static;
+}
+
+.comparison .container .title p {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.comparison .container .table {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.comparison .container .table table {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+.comparison .container .table th,
+.comparison .container .table td {
+    padding: 14px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+
+.comparison .container .table th {
+    background-color: white;
+    color: black;
+}
+
+.comparison .container .table th.our-col,
+.comparison .container .table .our-product {
+    background-color: lavender;
+}
+
+.comparison .container .table .price {
+    font-weight: bold;
+    font-size: 17px;
+    color: blueviolet;
+}
+
+.comparison .container .table .pill {
+    position: static;
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comparison .container .table .pill i {
+    color: white;
+    margin-right: 5px;
+}
+
+.comparison .container .table .fa-star {
+    color: gold;
+}
+
+.comparison .container .table .fa-regular {
+    color: gray;
+}
+
+.comparison .container .table .fa-star-half-stroke {
+    color: gold;
+}
+
+.comparison .container .table .td8 {
+    color: indianred;
+}
+
+.winner {
+    width: 25%;
+    margin: 30px auto 0;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 20px 25px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.winner i {
+    color: seagreen;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.winner h4 {
+    display: inline-block;
+    color: seagreen;
+    font-size: 20px;
+}
+
+.winner p {
+    color: darkgray;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.comparison .container .table .fa-video {
+    color: turquoise;
+}
+
+.comparison .container .table .fa-camera {
+    color: mediumseagreen;
+}
+
+.comparison .container .table .fa-battery-full {
+    color: yellowgreen;
+}
+
+.comparison .container .table .fa-satellite-dish {
+    color: orange;
+}
+
+.comparison .container .table .fa-gauge-high {
+    color: red;
+}
+
+.comparison .container .table .fa-shield-halved {
+    color: deepskyblue;
+}
+
+.comparison .container .table .fa-scale-balanced {
+    color: royalblue;
+}
+
+.comparison .container .table .fa-cloud-rain {
+    color: dodgerblue;
+}
+
+.comparison .container .table .fa-dollar-sign {
+    color: goldenrod;
+}
+
+.comparison .container .table .over {
+    font-weight: bold;
+}
+
+.comparison .container .table .bold {
+    font-weight: bold;
+}
+
+.reviews .title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reviews .title h1 span.ss {
+    text-align: center;
+    color: blueviolet;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: static;
+    font-size: 35px;
+}
+
+.reviews .title p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rating-card {
+    float: left;
+    width: 400px;
+    margin: 40px auto;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    margin-left: 230px;
+    position: sticky;
+    top: 90px;
+}
+
+.rating-card h1 {
+    font-size: 60px;
+    color: black;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.rating-card span.stars {
+    position: static;
+    color: gold;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    font-size: 24px;
+    display: block;
+}
+
+.rating-card .stars i {
+    color: gold;
+}
+
+.rating-card span {
+    position: static;
+    background-color: transparent;
+    color: gray;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 10px;
+    display: block;
+    font-weight: normal;
+}
+
+.rating-bars {
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.bar-row {
+    position: relative;
+    margin-bottom: 15px;
+    height: 25px;
+    font-size: 14px;
+    color: black;
+}
+
+.bar-row::after {
+    content: "";
+    position: absolute;
+    left: 40px;
+    right: 50px;
+    top: 50%;
+    margin-top: -5px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.bar-row::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    margin-top: -5px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 10px;
+    z-index: 2;
+    max-width: calc(100% - 90px);
+}
+
+.w-78::before {
+    right: 22%;
+}
+
+.w-15::before {
+    right: 85%;
+}
+
+.w-5::before {
+    right: 95%;
+}
+
+.w-1-5::before {
+    right: 98.5%;
+}
+
+.w-0-5::before {
+    right: 99.5%;
+}
+
+.bar-row .num {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 25px;
+    text-align: right;
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    border-radius: 0;
+    z-index: 3;
+}
+
+.bar-row .percent {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 40px;
+    text-align: right;
+    color: gray;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    z-index: 3;
+}
+
+.summary {
+    width: 350px;
+    margin: 0 auto;
+    border-top: 1px solid silver;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.item {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+
+.item h4 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 13px;
+    color: gray;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.review-list {
+    width: 55%;
+    float: right;
+    margin: 40px 2% 40px 0;
+    font-family: "Exo", sans-serif;
+}
+
+.review-card {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.avatar-icon {
+    float: left;
+    margin-right: 15px;
+}
+
+.avatar-icon .avatar-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.review-header {
+    float: left;
+}
+
+.review-header h4 {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 2px;
+}
+
+.review-header p {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.review-header .user-rating i {
+    color: gold;
+    font-size: 13px;
+}
+
+.review-header .user-rating span {
+    position: static;
+    background-color: transparent;
+    color: dimgray;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.review-data {
+    float: right;
+    text-align: right;
+    font-size: 13px;
+    color: gray;
+    width: 35%;
+}
+
+.verified-badge {
+    display: inline-block;
+    background-color: lavender;
+    color: blueviolet;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+
+.review-data .date {
+    display: block;
+    position: static;
+    background-color: transparent;
+    color: gray;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.review-text {
+    clear: both;
+    font-size: 14px;
+    color: dimgray;
+    line-height: 1.7;
+    padding-top: 15px;
+    border-top: 1px solid whitesmoke;
+    margin-top: 15px;
+}
+
+.review-loadmore {
+    clear: both;
+    width: 55%;
+    float: right;
+    margin: 20px 2% 40px 0;
+    text-align: center;
+}
+
+.load-more-btn {
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid blueviolet;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: .3s;
+}
+
+.load-more-btn:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.related-products {
+    background-color: rgb(238, 234, 238);
+    padding: 80px 0;
+    margin-top: 60px;
+    text-align: center;
+    clear: both;
+}
+
+.related-products .title h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.related-products .title h1 span.rp {
+    color: blueviolet;
+}
+
+.related-products .title p {
+    color: darkgray;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-card {
+    float: left;
+    width: 22%;
+    margin: 0 1.5%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.product-img {
+    position: relative;
+    padding: 15px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.product-img img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+.product-img:hover img {
+    transform: scale(1.08);
+}
+
+
+.badge {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.badge.accessory {
+    background-color: teal;
+}
+
+.badge.essential {
+    background-color: seagreen;
+}
+
+.badge.power {
+    background-color: deepskyblue;
+}
+
+.badge.safety {
+    background-color: orangered;
+}
+
+.product-card h3 {
+    margin: 15px 20px 10px;
+    font-size: 20px;
+}
+
+.product-card p {
+    margin: 0 20px 15px;
+    font-size: 14px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.product-footer {
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.product-footer .price {
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.add-cart {
+    float: right;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.related-products .accessories-button{
+    clear: both;
+    width: 55%;
+   
+    margin: 20px 2% 40px 0;
+    text-align: center;
+}
+.related-products .accessories-button .acc-btn{
+    background-color:transparent;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: .3s;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.related-products .accessories-button .acc-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.footer {
+    background-color: #0b1120;
+    position: static;
+    left: 0;
+    bottom: 0;
+    padding: 80px 0 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.footer-top {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    float: left;
+    width: 20%;
+    margin-right: 3%;
+}
+
+.footer-col.about {
+    width: 31%;
+}
+
+.footer-col1 {
+    float: left;
+    width: 20%;
+    margin-right: 0;
+}
+
+.footer-logo .footer-icon {
+    background-color: blueviolet;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.footer-logo .footer-icon i {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.footer-col.about p {
+    clear: both;
+    color: darkgray;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons .face i{
+    margin-top: 10px;
+}
+.social-icons .X i{
+    margin-top:10px ;
+}
+.social-icons .insta i{
+    margin-top: 10px;
+}
+.social-icons .you i{
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: #1a2436;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 38px;
+    
+    margin-right: 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social-icons a.face:hover {
+    background-color: blue;
+}
+
+.social-icons a.X:hover {
+    background-color: dodgerblue;
+}
+
+.social-icons a.insta:hover {
+    background-color: mediumvioletred;
+}
+
+.social-icons a.you:hover {
+    background-color: red;
+}
+
+.footer-col h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-col1 h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    
+}
+
+.footer-col ul li {
+    margin-bottom: 14px;
+    
+}
+
+.footer-col ul li a {
+    margin-top: 10px;
+    
+    color: darkgray;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.footer-col1 ul {
+    list-style: none;
+}
+
+.footer-col1 ul li {
+    margin-bottom: 14px;
+}
+
+.footer-col1 ul li a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.footer-col1 ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1a2436;
+    padding: 25px 0;
+}
+
+.footer-bottom p,
+.footer-bottom .payment-icons {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    float: left;
+    color: white;
+    font-size: 13px;
+}
+
+
+
+
+
+.footer-bottom .payment-icons {
+    float: right;
+    width: auto;
+    margin: 0;
+}
+
+.footer-bottom .payment-icons img {
+    height: 24px;
+    margin-left: 12px;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.footer-bottom .payment-icons .fa-cc-paypal {
+    color: darkblue;
+}
+
+.footer-bottom .payment-icons .fa-cc-mastercard {
+    color: crimson;
+}
+
+.footer-bottom .payment-icons .fa-cc-visa {
+    color: navy;
+}
